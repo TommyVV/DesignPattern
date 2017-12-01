@@ -1,0 +1,32 @@
+﻿using DesignPattern.Strategy.Base;
+using DesignPattern.Strategy.Implement;
+using DesignPattern.Strategy.Model;
+using System;
+
+namespace DesignPattern.Strategy
+{
+    public class Enter
+    {
+        public void EnterGate()
+        {
+            TravelStrategy travelPlan = null;
+
+            Weather weather = (Weather)(new Random().Next(1, 3));
+            switch (weather)
+            {
+                case Weather.Rain:
+                    Console.WriteLine("天气糟糕");
+                    travelPlan = new BackupTravel();
+                    break;
+                case Weather.Sunny:
+                    Console.WriteLine("天气晴好");
+                    travelPlan = new GuangxiTravel() { Budget = 3000 };
+                    break;
+            }
+
+            travelPlan.TravelPlan();
+
+            Console.ReadLine();            
+        }
+    }
+}
