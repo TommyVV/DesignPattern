@@ -12,7 +12,7 @@ namespace DesignPattern.Chain.Implement
         {
             base.UserName = userName;
             base.Permissions = permissions;
-            base.Successor = new CEO("CEO--链总");
+            base.Successor = new CEO("CEO--Tommy");
         }
 
         public override void DoBillOperation(Bill bill)

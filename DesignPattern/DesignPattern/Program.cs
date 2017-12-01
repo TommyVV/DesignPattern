@@ -110,16 +110,16 @@ namespace DesignPattern
             Customer customer = new Customer
             {
                 Id = 1,
-                NickName = "圣杰",
-                RealName = "圣杰",
-                Address = "深圳市南山区",
-                Phone = "135****9358",
-                Zip = "518000"
+                NickName = "Tommy",
+                RealName = "Tommy",
+                Address = "上海市",
+                Phone = "158****5534",
+                Zip = "210012"
             };
 
-            Product productA = new Product { Id = 1, Name = "小米5", Price = 1899 };
-            Product productB = new Product { Id = 2, Name = "小米5手机防爆膜", Price = 29 };
-            Product productC = new Product { Id = 3, Name = "小米5手机保护套", Price = 69 };
+            Product productA = new Product { Id = 1, Name = "苹果x", Price = 1899 };
+            Product productB = new Product { Id = 2, Name = "苹果x手机防爆膜", Price = 29 };
+            Product productC = new Product { Id = 3, Name = "苹果x手机保护套", Price = 69 };
 
             OrderLine line1 = new OrderLine { Id = 1, Product = productA, Qty = 1 };
             OrderLine line2 = new OrderLine { Id = 1, Product = productB, Qty = 2 };
@@ -160,9 +160,9 @@ namespace DesignPattern
 
             List<ContactPerson> persons = new List<ContactPerson>()
             {
-                new ContactPerson("张三","13513757890"),
-                new ContactPerson("李四","18563252369"),
-                new ContactPerson("王二","17825635486"),
+                new ContactPerson("张三","13800138000"),
+                new ContactPerson("李四","13800138001"),
+                new ContactPerson("王二","13800138002"),
             };
 
             Mobile mobile = new Mobile(persons);
@@ -385,12 +385,10 @@ namespace DesignPattern
                 MaterialName = "惠普电脑",
                 Qty = 50,
                 Price = 5000,
-                BillMaker = new Purchaser("采购员--小责")
-                //BillMaker = new Manager("经理--任经理")
-                //BillMaker = new CEO("CEO--链总")
+                BillMaker = new Purchaser("采购员--小张")
             };
 
-            Console.WriteLine(string.Format("创建采购申请单：{0};申请购买{1}台{2}", bill.BilNo, bill.Qty, bill.MaterialName));
+            Console.WriteLine($"创建采购申请单：{bill.BilNo};申请购买{bill.Qty}台{bill.MaterialName}");
 
             bill.BillMaker.HandleBill(bill);
 

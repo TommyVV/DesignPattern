@@ -5,3 +5,6 @@ D:\demo\pattern\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csprojResolv
 D:\demo\pattern\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csproj.CoreCompileInputs.cache
 D:\demo\pattern\DesignPattern\DesignPattern\obj\Debug\DesignPattern.exe
 D:\demo\pattern\DesignPattern\DesignPattern\obj\Debug\DesignPattern.pdb
+D:\Tommy\github\DesignPattern\DesignPattern\bin\Debug\DesignPattern.exe.config
+D:\Tommy\github\DesignPattern\DesignPattern\obj\Debug\DesignPattern.exe
+D:\Tommy\github\DesignPattern\DesignPattern\obj\Debug\DesignPattern.pdb

@@ -12,7 +12,7 @@ namespace DesignPattern.Chain.Implement
         {
             base.UserName = username;
             base.Permissions = permissions;
-            base.Successor = new Manager("经理--任经理");//在构造函数中指定下一个处理者
+            base.Successor = new Manager("经理--张经理");//在构造函数中指定下一个处理者
         }
 
         public override void DoBillOperation(Bill bill)
